@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkbite_sized=globalThis.webpackChunkbite_sized||[]).push([[784],{4375:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"tutorials"}')}}]);
