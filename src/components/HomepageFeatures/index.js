@@ -25,7 +25,7 @@ import styles from './styles.module.css'; // local CSS module for styling
 const FeatureList = [
   {
     title: 'Concise Video Tutorials',
-    Svg: require('@site/static/img/undraw_video_tutorial.svg').default,
+    Svg: require('@site/static/img/icon_video_tutorial.png').default,
     description: (
       <>
         Short, focused videos that simplify Open Science workflows into practical, actionable steps you can apply right away.
@@ -34,7 +34,7 @@ const FeatureList = [
   },
   {
     title: 'Tailored for Researchers',
-    Svg: require('@site/static/img/undraw_research.svg').default,
+    Svg: require('@site/static/img/icon_researcher.png').default,
     description: (
       <>
         Created with early-career researchers in mind, especially those using quantitative methods in economics and social sciences.
@@ -43,7 +43,7 @@ const FeatureList = [
   },
   {
     title: 'Interactive & Practical',
-    Svg: require('@site/static/img/undraw_code_review.svg').default,
+    Svg: require('@site/static/img/icon_interactive.png').default,
     description: (
       <>
         Learn by doing with real-world examples and workflows using tools like GitHub, R, and Python.
