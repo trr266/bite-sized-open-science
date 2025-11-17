@@ -18,6 +18,11 @@ import clsx from 'clsx'; // utility for conditional classNames
 import Heading from '@theme/Heading'; // Docusaurus themed heading component
 import styles from './styles.module.css'; // local CSS module for styling
 
+// Import PNGs as image URLs (do not treat them as SVG components)
+import iconVideo from '@site/static/img/icon_video_tutorial.png';
+import iconResearcher from '@site/static/img/icon_researcher.png';
+import iconInteractive from '@site/static/img/icon_interactive_practical.png';
+
 // ========================================================
 // Feature definitions
 // ========================================================
@@ -25,7 +30,7 @@ import styles from './styles.module.css'; // local CSS module for styling
 const FeatureList = [
   {
     title: 'Concise Video Tutorials',
-    Svg: require('@site/static/img/icon_video_tutorial.png').default,
+    image: iconVideo,
     description: (
       <>
         Short, focused videos that simplify Open Science workflows into practical, actionable steps you can apply right away.
@@ -34,7 +39,7 @@ const FeatureList = [
   },
   {
     title: 'Tailored for Researchers',
-    Svg: require('@site/static/img/icon_researcher.png').default,
+    image: iconResearcher,
     description: (
       <>
         Created with early-career researchers in mind, especially those using quantitative methods in economics and social sciences.
@@ -43,7 +48,7 @@ const FeatureList = [
   },
   {
     title: 'Interactive & Practical',
-    Svg: require('@site/static/img/icon_interactive_practical.png').default,
+    image: iconInteractive,
     description: (
       <>
         Learn by doing with real-world examples and workflows using tools like GitHub, R, and Python.
@@ -59,14 +64,12 @@ const FeatureList = [
 // - Svg: The feature icon
 // - title: Feature title
 // - description: Feature description
-function Feature({Svg, title, description}) {
+function Feature({image, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      {/* Icon centered */}
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={image} className={styles.featureSvg} alt={title} role="img" />
       </div>
-      {/* Title and description centered with horizontal padding */}
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
