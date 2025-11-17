@@ -20,6 +20,7 @@
 
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 import styles from './contact.module.css';
 
 /**
@@ -35,7 +36,7 @@ export default function ContactThanksPage() {
         <p>We’ve received your message and will get back to you as soon as possible.</p>
         <p>
           {/* Inline brand-colored link back to homepage */}
-          <a href="/bite-sized/" style={{ color: 'var(--ifm-color-primary)' }}>
+          <a href="/" style={{ color: 'var(--ifm-color-primary)' }}>
             ← Back to homepage
           </a>
         </p>

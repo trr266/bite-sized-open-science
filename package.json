@@ -2,7 +2,7 @@
   "name": "bite-sized",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://timnahw.github.io/bite-sized",
+  "homepage": "https://trr266.github.io/bite-sized-open-science",
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
