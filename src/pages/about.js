@@ -59,9 +59,7 @@ export default function AboutPage() {
               <h3>Timnah Weckner</h3>
               <p>
                 BSc Business Administration, Humboldt University Berlin (5th semester). 
-                Working on the C02 Project since January 2024. Timnah focuses on tutorial 
-                content creation, structuring the learning paths, and ensuring the material 
-                is concise and actionable.
+                Working on the C02 Project since January 2024. 
               </p>
             </div>
             <div className={styles.teamMember}>
@@ -69,9 +67,7 @@ export default function AboutPage() {
               <h3>Fabian Kalife</h3>
               <p>
                 BSc Business Administration, Humboldt University Berlin (7th semester). 
-                Working on the C02 Project since January 2024. Fabian contributes to the 
-                technical setup, video production, and overall project coordination, making 
-                sure tutorials run smoothly and are easy to follow.
+                Working on the C02 Project since January 2024. 
               </p>
             </div>
           </div>
