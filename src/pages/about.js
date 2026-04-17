@@ -21,6 +21,7 @@ import Layout from '@theme/Layout';           // Docusaurus page layout wrapper
 import Link from '@docusaurus/Link';          // Docusaurus link component
 import styles from './about.module.css';      // Local CSS module
 import timnahImg from '@site/static/img/timnah.jpg';  // Team member images
+import inyaImg from '@site/static/img/inya.jpg';
 import fabianImg from '@site/static/img/fabian.jpeg';
 
 /* ========================================================
@@ -58,16 +59,36 @@ export default function AboutPage() {
               <img src={timnahImg} alt="Timnah Weckner" />
               <h3>Timnah Weckner</h3>
               <p>
-                BSc Business Administration, Humboldt University Berlin (5th semester). 
+                BSc Business Administration, Humboldt University Berlin (6th semester). 
                 Working on the C02 Project since January 2024. 
               </p>
             </div>
             <div className={styles.teamMember}>
+              <img src={inyaImg} alt="Inya Stewart-Wiese" />
+              <h3>Inya Stewart-Wiese</h3>
+              <p>
+                BSc Business Administration, Humboldt University Berlin (2nd semester). 
+                Working on the C02 Project since January 2026. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
+          Former Team Members Section
+          - Displays former team members with images, names, and roles
+      ======================================================== */}
+      <section className={styles.structureSection}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Former Team Members</h2>
+          <div className={styles.teamGrid}>
+            <div className={styles.teamMember}>
               <img src={fabianImg} alt="Fabian Kalife" />
               <h3>Fabian Kalife</h3>
               <p>
-                BSc Business Administration, Humboldt University Berlin (7th semester). 
-                Working on the C02 Project since January 2024. 
+                BSc Business Administration, Humboldt University Berlin. 
+                Worked on the C02 Project from January 2024 to December 2026. 
               </p>
             </div>
           </div>
