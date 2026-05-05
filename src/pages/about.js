@@ -88,7 +88,7 @@ export default function AboutPage() {
               <h3>Fabian Kalife</h3>
               <p>
                 BSc Business Administration, Humboldt University Berlin. 
-                Worked on the C02 Project from January 2024 to December 2026. 
+                Worked on the C02 Project from January 2024 to December 2025. 
               </p>
             </div>
           </div>

@@ -31,16 +31,16 @@ import styles from './contact.module.css';
 export default function ContactThanksPage() {
   return (
     <Layout title="Thank You">
-      <div className={styles.contactContainer}>
-        <h1 className={styles.contactTitle}>Thank you for your message!</h1>
-        <p>We’ve received your message and will get back to you as soon as possible.</p>
-        <p>
-          {/* Inline brand-colored link back to homepage */}
-          <a href="/" style={{ color: 'var(--ifm-color-primary)' }}>
-            ← Back to homepage
-          </a>
-        </p>
-      </div>
+      <section className={styles.heroSection}>
+        <div className="container">
+          <h1>Thank you for your message!</h1>
+          <p>We've received your message and will get back to you as soon as possible.</p>
+          <p>
+            {/* Brand-colored link back to homepage */}
+            <a href="/">← Back to homepage</a>
+          </p>
+        </div>
+      </section>
     </Layout>
   );
 }
