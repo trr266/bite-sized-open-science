@@ -1,0 +1,66 @@
+---
+title: Docker Basics
+---
+
+import styles from '@site/src/css/tutorial.module.css';
+
+<div className={styles.videoGrid}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w_CoYVjuigQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Welcome to another episode of **Bite-Sized**! In this video, we will introduce you to **Docker**, one of the most powerful tools for reproducible research.
+
+### What is Docker?
+
+Docker is a tool that allows you to **package your application together with everything it needs to run**. A typical docker container includes:
+- The programming language version
+- All required packages and libraries
+- System libraries
+- Operating system settings
+
+Think of it as a lightweight, isolated setup for running an application that ensures your code runs exactly the same way on your machine, on your supervisor's machine, or anywhere else. 
+Unlike a full virtual machine, containers are fast and efficient, they share your computer's operating system kernel while keeping everything else isolated.
+
+:::tip[Reproducibility]
+
+If your code runs inside a Docker container on your machine, it will run **exactly the same way** on someone else's machine. This is the core promise of Docker for reproducible research.
+
+:::
+
+:::danger[The "Works on My Machine" Problem]
+
+Without a standardized environment, code that works perfectly on your laptop might suddenly break when sent to a supervisor or collaborator. This is often due to:
+- Mismatched package versions
+- Differing Python versions
+- Different operating systems
+
+Docker solves this problem by packaging everything your code needs into a single, portable container.
+
+:::
+
+### Why Docker for Open Science?
+
+In Open Science, ensuring reproducible results, transparent workflows, and long-term usability of research code is essential. Instead of just sharing your code and hoping collaborators can get it to work, Docker allows you to **share the exact research environment you used** — code, dependencies, and all.
+
+### Installation & Testing
+
+**For Mac and Windows:**
+1. Download **Docker Desktop** from [docker.com](https://www.docker.com/products/docker-desktop)
+2. For Mac, make sure to pick the right version for your processor:
+   - **Apple Silicon** (M1/M2/M3): ARM64 version
+   - **Intel**: Intel version
+
+**For Linux:**
+1. Go to [docs.docker.com/engine/install](https://docs.docker.com/engine/install/)
+2. Select your distribution and follow the provided steps
+
+**To test your installation:**
+```bash
+docker run hello-world
+```
+
+If you see the message **"Hello from Docker!"**, everything is working correctly!
+
+### What's Next?
+
+In the next video, we'll create our first Docker container and show you how to containerize a simple Python research project. Get ready to put Docker into action!

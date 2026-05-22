@@ -37,6 +37,7 @@ const sidebars = {
             'intro-setup/github/commits-and-pull-requests',
             'intro-setup/github/github-issues',
             'intro-setup/github/coding-in-github',
+            'intro-setup/github/docker-basics',
           ],
         },
         {
